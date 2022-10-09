@@ -16,7 +16,7 @@ void sub(stack_t **stack, unsigned int line_number)
 		exit(EXIT_FAILURE);
 	}
 
-	result = (*stack)->next->n - (*stack)->n;
+	result = (*stack)->n - (*stack)->next->n /* - (*stack)->n; */
 
 	pop(stack, 0);
 	pop(stack, 0);
